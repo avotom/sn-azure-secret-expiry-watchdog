@@ -6,13 +6,13 @@
         <annotation>Creates a task for expired service principals and assigns it to the configured  group (system property).</annotation>
         <callable_by_client_api>false</callable_by_client_api>
         <category/>
-        <compiler_build/>
+        <compiler_build>glide-quebec-12-09-2020__patch1-02-18-2021</compiler_build>
         <copied_from/>
         <copied_from_name/>
         <description/>
         <internal_name>default_azure_service_principal_processing_flow</internal_name>
-        <label_cache>[{"name":"subflow.expiry_date","label":"Input➛Expiry Date","reference":"","reference_display":"","type":"glide_date","base_type":"glide_date","column_name":"","attributes":{"uiType":"glide_date","uiTypeLabel":"Date","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiUniqueId":"069af10b-4b30-42e3-bfe3-d54cee6be3f6","sourceUiUniqueId":"","sourceType":"","sourceId":""}},{"name":"subflow.service_principal_name","label":"Input➛Service Principal Name","reference":"","reference_display":"","type":"string","base_type":"string","column_name":"","attributes":{"uiType":"string","uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiUniqueId":"e5da3b3b-c9fe-4034-a698-26201ee49cb7","sourceUiUniqueId":"","sourceType":"","sourceId":""}},{"name":"d3cc9c43-6e54-49be-8476-94b0dbf4f33f.Table","label":"1➛Service Task Table","reference":"service_task","reference_display":"Service Task Table","type":"table_name","base_type":"table_name","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"d3cc9c43-6e54-49be-8476-94b0dbf4f33f.Record","label":"1➛Service Task Record","reference":"service_task","reference_display":"Service Task Record","type":"reference","base_type":"reference","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"subflow.secret_type","label":"Input➛Secret Type","reference":"","reference_display":"","type":"choice","base_type":"choice","column_name":"","attributes":{"uiType":"choice","uiTypeLabel":"Choice","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiUniqueId":"ce16497d-188e-475e-a5fc-97ea2e12ee31","sourceUiUniqueId":"","sourceType":"","sourceId":""}}]</label_cache>
-        <latest_snapshot>a8b7f7ce2f8030108e0df64ef699b6d2</latest_snapshot>
+        <label_cache>[{"name":"09d7b6bc-bfb9-427e-9cbf-dfaa00bb8f8a.Count","label":"2➛Count","reference_display":"Count","type":"integer","base_type":"integer","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"09d7b6bc-bfb9-427e-9cbf-dfaa00bb8f8a.Table","label":"2➛Table","reference_display":"Table","type":"table_name","base_type":"table_name","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"09d7b6bc-bfb9-427e-9cbf-dfaa00bb8f8a.Records","label":"2➛Records","reference_display":"Records","type":"records","base_type":"records","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"c97bc4fe-63c2-4474-bef0-45ec168b46e8.approval_state","label":"4➛Approval State","reference_display":"Approval State","type":"choice","base_type":"choice","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"a5ca96c6-f292-4642-9f87-d3c326eccef5.Count","label":"1➛Count","reference_display":"Count","type":"integer","base_type":"integer","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"a5ca96c6-f292-4642-9f87-d3c326eccef5.Table","label":"1➛Service Task Table","reference":"service_task","reference_display":"Service Task","type":"table_name","base_type":"table_name","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"a5ca96c6-f292-4642-9f87-d3c326eccef5.Records","label":"1➛Service Task Records","reference":"service_task","reference_display":"Service Task","type":"records","base_type":"records","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"a53f0210-3f57-4658-983b-322de2e7ae7b.error_message","label":"1➛Error Message","reference_display":"Error Message","type":"string","base_type":"string","attributes":{"uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","pwd2droppable":"true","uiType":"string","uiUniqueId":"87687532-9e3d-4497-a88e-90f45bfb9adb"}},{"name":"a53f0210-3f57-4658-983b-322de2e7ae7b.status","label":"1➛Status","reference_display":"Status","type":"choice","base_type":"choice","attributes":{"uiTypeLabel":"Choice","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"choice","uiUniqueId":"5e478657-3a84-4a60-a92b-d3e80005ad34"}},{"name":"a53f0210-3f57-4658-983b-322de2e7ae7b.Table","label":"1➛Service Task Table","reference":"service_task","reference_display":"Service Task","type":"table_name","base_type":"table_name","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"a53f0210-3f57-4658-983b-322de2e7ae7b.Record","label":"1➛Service Task Record","reference":"service_task","reference_display":"Service Task","type":"reference","base_type":"reference","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"subflow.secret_id","label":"Input➛Secret ID","reference":"","reference_display":"","type":"string","base_type":"string","column_name":"","attributes":{"uiType":"string","uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiUniqueId":"e401c65c-9991-4711-92ef-682d4ea63cb4","sourceUiUniqueId":"","sourceType":"","sourceId":""}},{"name":"subflow.secret_name","label":"Input➛Secret Name","reference":"","reference_display":"","type":"string","base_type":"string","column_name":"","attributes":{"uiType":"string","uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiUniqueId":"2e226cbd-30a3-4570-b1c6-44d662526761","sourceUiUniqueId":"","sourceType":"","sourceId":""}},{"name":"subflow.id","label":"Input➛ID","reference":"","reference_display":"","type":"string","base_type":"string","column_name":"","attributes":{"uiType":"string","uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiUniqueId":"a0bf4943-59ef-4d84-9d20-710a438c3b23","sourceUiUniqueId":"","sourceType":"","sourceId":""}},{"name":"subflow.expiry_date","label":"Input➛Expiry Date","reference":"","reference_display":"","type":"glide_date","base_type":"glide_date","column_name":"","attributes":{"uiType":"glide_date","uiTypeLabel":"Date","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiUniqueId":"069af10b-4b30-42e3-bfe3-d54cee6be3f6","sourceUiUniqueId":"","sourceType":"","sourceId":""}},{"name":"d3cc9c43-6e54-49be-8476-94b0dbf4f33f.Table","label":"3➛Service Task Table","reference":"service_task","reference_display":"Service Task","type":"table_name","base_type":"table_name","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"d3cc9c43-6e54-49be-8476-94b0dbf4f33f.Record","label":"3➛Service Task Record","reference":"service_task","reference_display":"Service Task","type":"reference","base_type":"reference","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"subflow.secret_type","label":"Input➛Secret Type","reference":"","reference_display":"","type":"choice","base_type":"choice","column_name":"","attributes":{"uiType":"choice","uiTypeLabel":"Choice","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiUniqueId":"ce16497d-188e-475e-a5fc-97ea2e12ee31","sourceUiUniqueId":"","sourceType":"","sourceId":""}},{"name":"subflow.name","label":"Input➛Name","reference":"","reference_display":"","type":"string","base_type":"string","column_name":"","attributes":{"uiType":"string","uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiUniqueId":"e5da3b3b-c9fe-4034-a698-26201ee49cb7","sourceUiUniqueId":"","sourceType":"","sourceId":""}}]</label_cache>
+        <latest_snapshot>d288680b2fd030108e0df64ef699b6e8</latest_snapshot>
         <master_snapshot>a8b7f7ce2f8030108e0df64ef699b6d2</master_snapshot>
         <name>Default Azure Service Principal processing flow</name>
         <natlang/>
@@ -23,14 +23,14 @@
         <sc_callable>false</sc_callable>
         <show_draft_actions>false</show_draft_actions>
         <show_triggered_flows>false</show_triggered_flows>
-        <status>draft</status>
+        <status>published</status>
         <sys_class_name>sys_hub_flow</sys_class_name>
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2021-05-12 22:27:49</sys_created_on>
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>9574370e2f8030108e0df64ef699b620</sys_id>
-        <sys_mod_count>6</sys_mod_count>
+        <sys_mod_count>21</sys_mod_count>
         <sys_name>Default Azure Service Principal processing flow</sys_name>
         <sys_overrides/>
         <sys_package display_value="Azure Service Principal Secret Expiry Watchdog" source="x_337610_azure_ser">1d419bce2f0030108e0df64ef699b65c</sys_package>
@@ -38,7 +38,7 @@
         <sys_scope display_value="Azure Service Principal Secret Expiry Watchdog">1d419bce2f0030108e0df64ef699b65c</sys_scope>
         <sys_update_name>sys_hub_flow_9574370e2f8030108e0df64ef699b620</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2021-05-14 13:40:31</sys_updated_on>
+        <sys_updated_on>2021-05-27 20:26:14</sys_updated_on>
         <type>subflow</type>
     </sys_hub_flow>
     <sys_translated_text action="delete_multiple" query="documentkey=9574370e2f8030108e0df64ef699b620"/>
@@ -55,88 +55,7 @@
         <sys_updated_by>admin</sys_updated_by>
         <sys_updated_on>2021-05-12 22:27:49</sys_updated_on>
     </sys_flow_cat_variable_model>
-    <sys_hub_flow_input action="delete_multiple" query="model=9574370e2f8030108e0df64ef699b620^sys_idNOT IN0b553b4e2f8030108e0df64ef699b64c,18fec87e2f0030108e0df64ef699b618,20fec87e2f0030108e0df64ef699b638,4b553b4e2f8030108e0df64ef699b652,60fec87e2f0030108e0df64ef699b62c,c755b7ca2f8030108e0df64ef699b627"/>
-    <sys_hub_flow_input action="INSERT_OR_UPDATE">
-        <active>true</active>
-        <array>false</array>
-        <array_denormalized>false</array_denormalized>
-        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=string,uiTypeLabel=String,uiUniqueId=a0bf4943-59ef-4d84-9d20-710a438c3b23</attributes>
-        <audit>false</audit>
-        <calculation><![CDATA[(function calculatedFieldValue(current) {
-
-	// Add your code here
-	return '';  // return the calculated value
-
-})(current);]]></calculation>
-        <choice/>
-        <choice_field/>
-        <choice_table/>
-        <column_label/>
-        <comments/>
-        <create_roles/>
-        <default_value/>
-        <defaultsort/>
-        <delete_roles/>
-        <dependent/>
-        <dependent_on_field/>
-        <display>false</display>
-        <dynamic_creation>false</dynamic_creation>
-        <dynamic_creation_script/>
-        <dynamic_default_value/>
-        <dynamic_ref_qual/>
-        <element>service_principal_id</element>
-        <element_reference>false</element_reference>
-        <foreign_database/>
-        <function_definition/>
-        <function_field>false</function_field>
-        <help/>
-        <hint/>
-        <internal_type display_value="String">string</internal_type>
-        <label>Service Principal ID</label>
-        <mandatory>false</mandatory>
-        <max_length>8000</max_length>
-        <model display_value="Default Azure Service Principal processing flow">9574370e2f8030108e0df64ef699b620</model>
-        <model_id>9574370e2f8030108e0df64ef699b620</model_id>
-        <model_table>sys_hub_flow</model_table>
-        <name>var__m_sys_hub_flow_input_9574370e2f8030108e0df64ef699b620</name>
-        <next_element/>
-        <order>2</order>
-        <primary>false</primary>
-        <read_only>false</read_only>
-        <read_roles/>
-        <reference/>
-        <reference_cascade_rule/>
-        <reference_floats>false</reference_floats>
-        <reference_key/>
-        <reference_qual/>
-        <reference_qual_condition/>
-        <reference_type/>
-        <sizeclass/>
-        <spell_check>false</spell_check>
-        <staged>false</staged>
-        <sys_class_name>sys_hub_flow_input</sys_class_name>
-        <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2021-05-12 22:31:46</sys_created_on>
-        <sys_id>0b553b4e2f8030108e0df64ef699b64c</sys_id>
-        <sys_mod_count>0</sys_mod_count>
-        <sys_name/>
-        <sys_package/>
-        <sys_policy/>
-        <sys_scope display_value="Azure Service Principal Secret Expiry Watchdog">1d419bce2f0030108e0df64ef699b65c</sys_scope>
-        <sys_update_name/>
-        <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2021-05-12 22:31:46</sys_updated_on>
-        <table_reference>false</table_reference>
-        <text_index>false</text_index>
-        <unique>false</unique>
-        <use_dependent_field>false</use_dependent_field>
-        <use_dynamic_default>false</use_dynamic_default>
-        <use_reference_qualifier>simple</use_reference_qualifier>
-        <virtual>false</virtual>
-        <widget/>
-        <write_roles/>
-        <xml_view>false</xml_view>
-    </sys_hub_flow_input>
+    <sys_hub_flow_input action="delete_multiple" query="model=9574370e2f8030108e0df64ef699b620^sys_idNOT IN18fec87e2f0030108e0df64ef699b618,20fec87e2f0030108e0df64ef699b638,4b553b4e2f8030108e0df64ef699b652,60fec87e2f0030108e0df64ef699b62c,64de58cf2f9030108e0df64ef699b62d,bb73a4c32fd030108e0df64ef699b676,e4de58cf2f9030108e0df64ef699b636"/>
     <sys_hub_flow_input action="INSERT_OR_UPDATE">
         <active>true</active>
         <array>false</array>
@@ -181,7 +100,7 @@
         <model_table>sys_hub_flow</model_table>
         <name>var__m_sys_hub_flow_input_9574370e2f8030108e0df64ef699b620</name>
         <next_element/>
-        <order>3</order>
+        <order>5</order>
         <primary>false</primary>
         <read_only>false</read_only>
         <read_roles/>
@@ -199,14 +118,14 @@
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2021-05-14 13:40:29</sys_created_on>
         <sys_id>18fec87e2f0030108e0df64ef699b618</sys_id>
-        <sys_mod_count>0</sys_mod_count>
+        <sys_mod_count>2</sys_mod_count>
         <sys_name/>
         <sys_package/>
         <sys_policy/>
         <sys_scope display_value="Azure Service Principal Secret Expiry Watchdog">1d419bce2f0030108e0df64ef699b65c</sys_scope>
         <sys_update_name/>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2021-05-14 13:40:29</sys_updated_on>
+        <sys_updated_on>2021-05-27 20:04:29</sys_updated_on>
         <table_reference>false</table_reference>
         <text_index>false</text_index>
         <unique>false</unique>
@@ -262,7 +181,7 @@
         <model_table>sys_hub_flow</model_table>
         <name>var__m_sys_hub_flow_input_9574370e2f8030108e0df64ef699b620</name>
         <next_element/>
-        <order>5</order>
+        <order>6</order>
         <primary>false</primary>
         <read_only>false</read_only>
         <read_roles/>
@@ -280,14 +199,14 @@
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2021-05-14 13:40:30</sys_created_on>
         <sys_id>20fec87e2f0030108e0df64ef699b638</sys_id>
-        <sys_mod_count>0</sys_mod_count>
+        <sys_mod_count>2</sys_mod_count>
         <sys_name/>
         <sys_package/>
         <sys_policy/>
         <sys_scope display_value="Azure Service Principal Secret Expiry Watchdog">1d419bce2f0030108e0df64ef699b65c</sys_scope>
         <sys_update_name/>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2021-05-14 13:40:30</sys_updated_on>
+        <sys_updated_on>2021-05-27 20:04:29</sys_updated_on>
         <table_reference>false</table_reference>
         <text_index>false</text_index>
         <unique>false</unique>
@@ -343,7 +262,7 @@
         <model_table>sys_hub_flow</model_table>
         <name>var__m_sys_hub_flow_input_9574370e2f8030108e0df64ef699b620</name>
         <next_element/>
-        <order>6</order>
+        <order>7</order>
         <primary>false</primary>
         <read_only>false</read_only>
         <read_roles/>
@@ -361,14 +280,14 @@
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2021-05-12 22:31:46</sys_created_on>
         <sys_id>4b553b4e2f8030108e0df64ef699b652</sys_id>
-        <sys_mod_count>1</sys_mod_count>
+        <sys_mod_count>3</sys_mod_count>
         <sys_name/>
         <sys_package/>
         <sys_policy/>
         <sys_scope display_value="Azure Service Principal Secret Expiry Watchdog">1d419bce2f0030108e0df64ef699b65c</sys_scope>
         <sys_update_name/>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2021-05-14 13:40:30</sys_updated_on>
+        <sys_updated_on>2021-05-27 20:04:29</sys_updated_on>
         <table_reference>false</table_reference>
         <text_index>false</text_index>
         <unique>false</unique>
@@ -442,14 +361,14 @@
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2021-05-14 13:40:30</sys_created_on>
         <sys_id>60fec87e2f0030108e0df64ef699b62c</sys_id>
-        <sys_mod_count>1</sys_mod_count>
+        <sys_mod_count>3</sys_mod_count>
         <sys_name/>
         <sys_package/>
         <sys_policy/>
         <sys_scope display_value="Azure Service Principal Secret Expiry Watchdog">1d419bce2f0030108e0df64ef699b65c</sys_scope>
         <sys_update_name/>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2021-05-14 13:40:30</sys_updated_on>
+        <sys_updated_on>2021-05-27 20:04:28</sys_updated_on>
         <table_reference>false</table_reference>
         <text_index>false</text_index>
         <unique>false</unique>
@@ -489,7 +408,7 @@
         <dynamic_creation_script/>
         <dynamic_default_value/>
         <dynamic_ref_qual/>
-        <element>service_principal_name</element>
+        <element>name</element>
         <element_reference>false</element_reference>
         <foreign_database/>
         <function_definition/>
@@ -497,7 +416,88 @@
         <help/>
         <hint/>
         <internal_type display_value="String">string</internal_type>
-        <label>Service Principal Name</label>
+        <label>Name</label>
+        <mandatory>false</mandatory>
+        <max_length>8000</max_length>
+        <model display_value="Default Azure Service Principal processing flow">9574370e2f8030108e0df64ef699b620</model>
+        <model_id>9574370e2f8030108e0df64ef699b620</model_id>
+        <model_table>sys_hub_flow</model_table>
+        <name>var__m_sys_hub_flow_input_9574370e2f8030108e0df64ef699b620</name>
+        <next_element/>
+        <order>2</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_input</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-05-27 19:44:02</sys_created_on>
+        <sys_id>64de58cf2f9030108e0df64ef699b62d</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Azure Service Principal Secret Expiry Watchdog">1d419bce2f0030108e0df64ef699b65c</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-05-27 20:04:28</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_input>
+    <sys_hub_flow_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=string,uiTypeLabel=String,uiUniqueId=c2cc1060-8dea-4a3a-8097-e3b6cd21c025</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>type</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="String">string</internal_type>
+        <label>Type</label>
         <mandatory>false</mandatory>
         <max_length>8000</max_length>
         <model display_value="Default Azure Service Principal processing flow">9574370e2f8030108e0df64ef699b620</model>
@@ -521,8 +521,8 @@
         <staged>false</staged>
         <sys_class_name>sys_hub_flow_input</sys_class_name>
         <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2021-05-12 22:31:45</sys_created_on>
-        <sys_id>c755b7ca2f8030108e0df64ef699b627</sys_id>
+        <sys_created_on>2021-05-27 20:04:28</sys_created_on>
+        <sys_id>bb73a4c32fd030108e0df64ef699b676</sys_id>
         <sys_mod_count>0</sys_mod_count>
         <sys_name/>
         <sys_package/>
@@ -530,7 +530,7 @@
         <sys_scope display_value="Azure Service Principal Secret Expiry Watchdog">1d419bce2f0030108e0df64ef699b65c</sys_scope>
         <sys_update_name/>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2021-05-12 22:31:45</sys_updated_on>
+        <sys_updated_on>2021-05-27 20:04:28</sys_updated_on>
         <table_reference>false</table_reference>
         <text_index>false</text_index>
         <unique>false</unique>
@@ -542,29 +542,200 @@
         <write_roles/>
         <xml_view>false</xml_view>
     </sys_hub_flow_input>
-    <sys_hub_action_instance action="delete_multiple" query="flow=9574370e2f8030108e0df64ef699b620^sys_idNOT IN9d2733ce2f8030108e0df64ef699b65b"/>
+    <sys_hub_flow_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=string,uiTypeLabel=String,uiUniqueId=a0bf4943-59ef-4d84-9d20-710a438c3b23</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>id</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="String">string</internal_type>
+        <label>ID</label>
+        <mandatory>false</mandatory>
+        <max_length>8000</max_length>
+        <model display_value="Default Azure Service Principal processing flow">9574370e2f8030108e0df64ef699b620</model>
+        <model_id>9574370e2f8030108e0df64ef699b620</model_id>
+        <model_table>sys_hub_flow</model_table>
+        <name>var__m_sys_hub_flow_input_9574370e2f8030108e0df64ef699b620</name>
+        <next_element/>
+        <order>3</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_input</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-05-27 19:44:02</sys_created_on>
+        <sys_id>e4de58cf2f9030108e0df64ef699b636</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Azure Service Principal Secret Expiry Watchdog">1d419bce2f0030108e0df64ef699b65c</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-05-27 20:04:28</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_input>
+    <sys_hub_action_instance action="delete_multiple" query="flow=9574370e2f8030108e0df64ef699b620^sys_idNOT IN8883a4c32fd030108e0df64ef699b6d0,9d2733ce2f8030108e0df64ef699b65b,d483e4c32fd030108e0df64ef699b615"/>
     <sys_hub_action_instance action="INSERT_OR_UPDATE">
         <action_inputs/>
-        <action_inputs/>
-        <action_type display_value="Create Task">2b3a6335531003003bf1d9109ec58759</action_type>
+        <action_type display_value="Look Up Records">43400a1587003300663ca1bb36cb0b4b</action_type>
         <action_type_parent/>
         <comment/>
-        <compiled_snapshot/>
+        <compiled_snapshot>43400a1587003300663ca1bb36cb0b4b</compiled_snapshot>
         <display_text/>
         <flow display_value="Default Azure Service Principal processing flow">9574370e2f8030108e0df64ef699b620</flow>
         <order>1</order>
         <parent_ui_id/>
         <sys_class_name>sys_hub_action_instance</sys_class_name>
         <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-05-27 20:04:29</sys_created_on>
+        <sys_id>8883a4c32fd030108e0df64ef699b6d0</sys_id>
+        <sys_mod_count>32</sys_mod_count>
+        <sys_scope display_value="Azure Service Principal Secret Expiry Watchdog">1d419bce2f0030108e0df64ef699b65c</sys_scope>
+        <sys_updated_by>system</sys_updated_by>
+        <sys_updated_on>2021-05-27 20:26:30</sys_updated_on>
+        <ui_id>a5ca96c6-f292-4642-9f87-d3c326eccef5</ui_id>
+    </sys_hub_action_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=8883a4c32fd030108e0df64ef699b6d0"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>8883a4c32fd030108e0df64ef699b6d0</document_key>
+        <order>0</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-05-27 20:04:29</sys_created_on>
+        <sys_id>0483a4c32fd030108e0df64ef699b6e1</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-05-27 20:04:29</sys_updated_on>
+        <value>service_task</value>
+        <variable display_value="Table">8f400a1587003300663ca1bb36cb0b4b</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>8883a4c32fd030108e0df64ef699b6d0</document_key>
+        <order>4</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-05-27 20:04:29</sys_created_on>
+        <sys_id>c883a4c32fd030108e0df64ef699b6e0</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-05-27 20:04:29</sys_updated_on>
+        <value>1</value>
+        <variable display_value="Max Results">4f400a1587003300663ca1bb36cb0b61</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>8883a4c32fd030108e0df64ef699b6d0</document_key>
+        <order>1</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-05-27 20:23:14</sys_created_on>
+        <sys_id>eac728c72fd030108e0df64ef699b66e</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-05-27 20:23:14</sys_updated_on>
+        <value>short_description=password (0eb4e550-65a9-4514-a687-03f1b5d9f46c) of Application (avocodo-simple-function) expires on 2019-10-03 06:23:33</value>
+        <variable display_value="Conditions">8f400a1587003300663ca1bb36cb0b50</variable>
+    </sys_variable_value>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=8883a4c32fd030108e0df64ef699b6d0^sys_idNOT IN4c83a4c32fd030108e0df64ef699b6de"/>
+    <sys_hub_input_scripts action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <input_name>conditions</input_name>
+        <instance>8883a4c32fd030108e0df64ef699b6d0</instance>
+        <referenced_table>sys_hub_action_instance</referenced_table>
+        <script>{"conditions":{"scriptActive":true,"script":"return \u0027short_description\u003d\u0027+fd_data.trigger.secret_type+\u0027 (\u0027 + fd_data.trigger.secret_id +\u0027) of \u0027+ fd_data.trigger.type +\u0027 (\u0027+ fd_data.trigger.id +\u0027) expires on \u0027+ fd_data.trigger.expiry_date;"}}</script>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-05-27 20:04:29</sys_created_on>
+        <sys_id>4c83a4c32fd030108e0df64ef699b6de</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-05-27 20:25:58</sys_updated_on>
+    </sys_hub_input_scripts>
+    <sys_hub_action_instance action="INSERT_OR_UPDATE">
+        <action_inputs/>
+        <action_type display_value="Create Task">2b3a6335531003003bf1d9109ec58759</action_type>
+        <action_type_parent/>
+        <comment/>
+        <compiled_snapshot>2b3a6335531003003bf1d9109ec58759</compiled_snapshot>
+        <display_text/>
+        <flow display_value="Default Azure Service Principal processing flow">9574370e2f8030108e0df64ef699b620</flow>
+        <order>3</order>
+        <parent_ui_id>1c1d2d57-3fcc-4ea7-9d96-78db5e5e01d4</parent_ui_id>
+        <sys_class_name>sys_hub_action_instance</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
         <sys_created_on>2021-05-12 22:39:33</sys_created_on>
         <sys_id>9d2733ce2f8030108e0df64ef699b65b</sys_id>
-        <sys_mod_count>10</sys_mod_count>
+        <sys_mod_count>50</sys_mod_count>
         <sys_scope display_value="Azure Service Principal Secret Expiry Watchdog">1d419bce2f0030108e0df64ef699b65c</sys_scope>
-        <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2021-05-14 13:40:31</sys_updated_on>
+        <sys_updated_by>system</sys_updated_by>
+        <sys_updated_on>2021-05-27 20:26:30</sys_updated_on>
         <ui_id>d3cc9c43-6e54-49be-8476-94b0dbf4f33f</ui_id>
     </sys_hub_action_instance>
     <sys_variable_value action="delete_multiple" query="document_key=9d2733ce2f8030108e0df64ef699b65b"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>9d2733ce2f8030108e0df64ef699b65b</document_key>
+        <order>1</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-05-27 20:04:30</sys_created_on>
+        <sys_id>1083a4c32fd030108e0df64ef699b6ea</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-05-27 20:04:30</sys_updated_on>
+        <value>short_description=fd-scripted^assignment_group=fd-scripted</value>
+        <variable display_value="Field Values">273a6335531003003bf1d9109ec5876b</variable>
+    </sys_variable_value>
     <sys_variable_value action="INSERT_OR_UPDATE">
         <document>sys_hub_action_instance</document>
         <document_key>9d2733ce2f8030108e0df64ef699b65b</document_key>
@@ -579,46 +750,157 @@
         <value>service_task</value>
         <variable display_value="Table">e73a6335531003003bf1d9109ec5875c</variable>
     </sys_variable_value>
-    <sys_element_mapping action="delete_multiple" query="id=9d2733ce2f8030108e0df64ef699b65b"/>
-    <sys_element_mapping action="INSERT_OR_UPDATE">
-        <field>field_values</field>
-        <id>9d2733ce2f8030108e0df64ef699b65b</id>
-        <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2021-05-12 22:39:34</sys_created_on>
-        <sys_id>112733ce2f8030108e0df64ef699b691</sys_id>
-        <sys_mod_count>1</sys_mod_count>
-        <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2021-05-14 13:40:31</sys_updated_on>
-        <table>var__m_sys_hub_action_input_2b3a6335531003003bf1d9109ec58759</table>
-        <value>short_description={{subflow.secret_type}} of service principal {{subflow.service_principal_name}} expires on {{subflow.expiry_date}}^assignment_group=fd-scripted</value>
-    </sys_element_mapping>
-    <sys_element_mapping action="INSERT_OR_UPDATE">
-        <field>task_table</field>
-        <id>9d2733ce2f8030108e0df64ef699b65b</id>
-        <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2021-05-12 22:39:34</sys_created_on>
-        <sys_id>d92733ce2f8030108e0df64ef699b65e</sys_id>
-        <sys_mod_count>0</sys_mod_count>
-        <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2021-05-12 22:39:34</sys_updated_on>
-        <table>var__m_sys_hub_action_input_2b3a6335531003003bf1d9109ec58759</table>
-        <value/>
-    </sys_element_mapping>
     <sys_hub_input_scripts action="delete_multiple" query="instance=9d2733ce2f8030108e0df64ef699b65b^sys_idNOT IN992733ce2f8030108e0df64ef699b65d"/>
     <sys_hub_input_scripts action="INSERT_OR_UPDATE">
         <active>true</active>
         <input_name>field_values</input_name>
         <instance>9d2733ce2f8030108e0df64ef699b65b</instance>
         <referenced_table>sys_hub_action_instance</referenced_table>
-        <script>{"assignment_group":{"scriptActive":true,"script":"return gs.getProperty(\u0027x_337610_azure_ser.azure.service.principal.assignment.group\u0027);","savedValue":""}}</script>
+        <script>{"short_description":{"scriptActive":true,"script":"return fd_data.trigger.secret_type+\u0027 (\u0027 + fd_data.trigger.secret_id +\u0027) of \u0027+ fd_data.trigger.type +\u0027 (\u0027+ fd_data.trigger.id +\u0027) expires on \u0027+ fd_data.trigger.expiry_date;","savedValue":""},"assignment_group":{"scriptActive":true,"script":"return gs.getProperty(\u0027x_337610_azure_ser.azure.service.principal.assignment.group\u0027);","savedValue":""}}</script>
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2021-05-12 22:39:33</sys_created_on>
         <sys_id>992733ce2f8030108e0df64ef699b65d</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-05-27 20:12:21</sys_updated_on>
+    </sys_hub_input_scripts>
+    <sys_hub_action_instance action="INSERT_OR_UPDATE">
+        <action_inputs/>
+        <action_type display_value="Log">5bc1bcc6531003003bf1d9109ec587d4</action_type>
+        <action_type_parent/>
+        <comment/>
+        <compiled_snapshot>5bc1bcc6531003003bf1d9109ec587d4</compiled_snapshot>
+        <display_text/>
+        <flow display_value="Default Azure Service Principal processing flow">9574370e2f8030108e0df64ef699b620</flow>
+        <order>5</order>
+        <parent_ui_id>89b938a8-2fd0-46b5-ac6a-2c59237499d7</parent_ui_id>
+        <sys_class_name>sys_hub_action_instance</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-05-27 20:04:30</sys_created_on>
+        <sys_id>d483e4c32fd030108e0df64ef699b615</sys_id>
+        <sys_mod_count>32</sys_mod_count>
+        <sys_scope display_value="Azure Service Principal Secret Expiry Watchdog">1d419bce2f0030108e0df64ef699b65c</sys_scope>
+        <sys_updated_by>system</sys_updated_by>
+        <sys_updated_on>2021-05-27 20:26:30</sys_updated_on>
+        <ui_id>2ca1a5f9-c246-4721-9723-347ece75ee03</ui_id>
+    </sys_hub_action_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=d483e4c32fd030108e0df64ef699b615"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>d483e4c32fd030108e0df64ef699b615</document_key>
+        <order>1</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-05-27 20:04:30</sys_created_on>
+        <sys_id>dc83e4c32fd030108e0df64ef699b616</sys_id>
         <sys_mod_count>0</sys_mod_count>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2021-05-12 22:39:33</sys_updated_on>
-    </sys_hub_input_scripts>
-    <sys_documentation action="delete_multiple" query="name=var__m_sys_hub_flow_input_9574370e2f8030108e0df64ef699b620^sys_idNOT IN28fec87e2f0030108e0df64ef699b63c,64fec87e2f0030108e0df64ef699b62a,68fec87e2f0030108e0df64ef699b636,83553b4e2f8030108e0df64ef699b651,c3553b4e2f8030108e0df64ef699b657,cb553b4e2f8030108e0df64ef699b64a"/>
+        <sys_updated_on>2021-05-27 20:04:30</sys_updated_on>
+        <value>Task with short description found -&gt; do not create new one.</value>
+        <variable display_value="Message">23c1bcc6531003003bf1d9109ec587e5</variable>
+    </sys_variable_value>
+    <sys_hub_flow_logic action="delete_multiple" query="flow=9574370e2f8030108e0df64ef699b620^sys_idNOT IN9083e4c32fd030108e0df64ef699b610,c483a4c32fd030108e0df64ef699b6e2"/>
+    <sys_hub_flow_logic action="INSERT_OR_UPDATE">
+        <block display_value="">d883e4c32fd030108e0df64ef699b60f</block>
+        <comment/>
+        <connected_to>1c1d2d57-3fcc-4ea7-9d96-78db5e5e01d4</connected_to>
+        <decision_table/>
+        <decision_table_inputs/>
+        <display_text/>
+        <extended_inputs/>
+        <flow display_value="Default Azure Service Principal processing flow">9574370e2f8030108e0df64ef699b620</flow>
+        <flow_variable/>
+        <flow_variables_assigned/>
+        <inputs/>
+        <logic_definition display_value="Else">1f781bf3c32232002841b63b12d3aee6</logic_definition>
+        <order>4</order>
+        <outputs_assigned/>
+        <outputs_to_assign/>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_flow_logic</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-05-27 20:04:30</sys_created_on>
+        <sys_id>9083e4c32fd030108e0df64ef699b610</sys_id>
+        <sys_mod_count>12</sys_mod_count>
+        <sys_scope display_value="Azure Service Principal Secret Expiry Watchdog">1d419bce2f0030108e0df64ef699b65c</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-05-27 20:26:14</sys_updated_on>
+        <ui_id>89b938a8-2fd0-46b5-ac6a-2c59237499d7</ui_id>
+        <workflow_inputs/>
+        <workflow_reference/>
+    </sys_hub_flow_logic>
+    <sys_variable_value action="delete_multiple" query="document_key=9083e4c32fd030108e0df64ef699b610"/>
+    <sys_hub_flow_logic action="INSERT_OR_UPDATE">
+        <block display_value="">8883a4c32fd030108e0df64ef699b6e1</block>
+        <comment/>
+        <connected_to/>
+        <decision_table/>
+        <decision_table_inputs/>
+        <display_text/>
+        <extended_inputs/>
+        <flow display_value="Default Azure Service Principal processing flow">9574370e2f8030108e0df64ef699b620</flow>
+        <flow_variable/>
+        <flow_variables_assigned/>
+        <inputs/>
+        <inputs/>
+        <logic_definition display_value="If">af4e1945c3e232002841b63b12d3ae3e</logic_definition>
+        <order>2</order>
+        <outputs_assigned/>
+        <outputs_to_assign/>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_flow_logic</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-05-27 20:04:29</sys_created_on>
+        <sys_id>c483a4c32fd030108e0df64ef699b6e2</sys_id>
+        <sys_mod_count>12</sys_mod_count>
+        <sys_scope display_value="Azure Service Principal Secret Expiry Watchdog">1d419bce2f0030108e0df64ef699b65c</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-05-27 20:26:14</sys_updated_on>
+        <ui_id>1c1d2d57-3fcc-4ea7-9d96-78db5e5e01d4</ui_id>
+        <workflow_inputs/>
+        <workflow_reference/>
+    </sys_hub_flow_logic>
+    <sys_variable_value action="delete_multiple" query="document_key=c483a4c32fd030108e0df64ef699b6e2"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_flow_logic</document>
+        <document_key>c483a4c32fd030108e0df64ef699b6e2</document_key>
+        <order>10</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-05-27 20:04:30</sys_created_on>
+        <sys_id>cc83a4c32fd030108e0df64ef699b6e6</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-05-27 20:04:30</sys_updated_on>
+        <value>Task not yet created</value>
+        <variable display_value="Condition Label">f0af19c1c32632002841b63b12d3aea3</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="id=c483a4c32fd030108e0df64ef699b6e2"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>condition</field>
+        <id>c483a4c32fd030108e0df64ef699b6e2</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-05-27 20:04:30</sys_created_on>
+        <sys_id>4c83a4c32fd030108e0df64ef699b6e6</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-05-27 20:04:30</sys_updated_on>
+        <table>var__m_sys_hub_flow_logic_input_af4e1945c3e232002841b63b12d3ae3e</table>
+        <value>{{a5ca96c6-f292-4642-9f87-d3c326eccef5.Count}}=0</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>condition_name</field>
+        <id>c483a4c32fd030108e0df64ef699b6e2</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-05-27 20:04:30</sys_created_on>
+        <sys_id>8883a4c32fd030108e0df64ef699b6e6</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-05-27 20:04:30</sys_updated_on>
+        <table>var__m_sys_hub_flow_logic_input_af4e1945c3e232002841b63b12d3ae3e</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_documentation action="delete_multiple" query="name=var__m_sys_hub_flow_input_9574370e2f8030108e0df64ef699b620^sys_idNOT IN28fec87e2f0030108e0df64ef699b63c,64fec87e2f0030108e0df64ef699b62a,68fec87e2f0030108e0df64ef699b636,a8de58cf2f9030108e0df64ef699b634,c3553b4e2f8030108e0df64ef699b657,ecde58cf2f9030108e0df64ef699b63a,f773a4c32fd030108e0df64ef699b67c"/>
     <sys_documentation action="INSERT_OR_UPDATE">
         <element>secret_id</element>
         <help/>
@@ -689,17 +971,17 @@
         <url_target/>
     </sys_documentation>
     <sys_documentation action="INSERT_OR_UPDATE">
-        <element>service_principal_id</element>
+        <element>name</element>
         <help/>
         <hint/>
-        <label>Service Principal ID</label>
+        <label>Name</label>
         <language>en</language>
         <name>var__m_sys_hub_flow_input_9574370e2f8030108e0df64ef699b620</name>
         <plural/>
         <sys_class_name>sys_documentation</sys_class_name>
         <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2021-05-12 22:31:46</sys_created_on>
-        <sys_id>83553b4e2f8030108e0df64ef699b651</sys_id>
+        <sys_created_on>2021-05-27 19:44:02</sys_created_on>
+        <sys_id>a8de58cf2f9030108e0df64ef699b634</sys_id>
         <sys_mod_count>0</sys_mod_count>
         <sys_name/>
         <sys_package display_value="Azure Service Principal Secret Expiry Watchdog" source="x_337610_azure_ser">1d419bce2f0030108e0df64ef699b65c</sys_package>
@@ -707,7 +989,7 @@
         <sys_scope display_value="Azure Service Principal Secret Expiry Watchdog">1d419bce2f0030108e0df64ef699b65c</sys_scope>
         <sys_update_name/>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2021-05-12 22:31:46</sys_updated_on>
+        <sys_updated_on>2021-05-27 19:44:02</sys_updated_on>
         <url/>
         <url_target/>
     </sys_documentation>
@@ -735,17 +1017,17 @@
         <url_target/>
     </sys_documentation>
     <sys_documentation action="INSERT_OR_UPDATE">
-        <element>service_principal_name</element>
+        <element>id</element>
         <help/>
         <hint/>
-        <label>Service Principal Name</label>
+        <label>ID</label>
         <language>en</language>
         <name>var__m_sys_hub_flow_input_9574370e2f8030108e0df64ef699b620</name>
         <plural/>
         <sys_class_name>sys_documentation</sys_class_name>
         <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2021-05-12 22:31:46</sys_created_on>
-        <sys_id>cb553b4e2f8030108e0df64ef699b64a</sys_id>
+        <sys_created_on>2021-05-27 19:44:02</sys_created_on>
+        <sys_id>ecde58cf2f9030108e0df64ef699b63a</sys_id>
         <sys_mod_count>0</sys_mod_count>
         <sys_name/>
         <sys_package display_value="Azure Service Principal Secret Expiry Watchdog" source="x_337610_azure_ser">1d419bce2f0030108e0df64ef699b65c</sys_package>
@@ -753,7 +1035,30 @@
         <sys_scope display_value="Azure Service Principal Secret Expiry Watchdog">1d419bce2f0030108e0df64ef699b65c</sys_scope>
         <sys_update_name/>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2021-05-12 22:31:46</sys_updated_on>
+        <sys_updated_on>2021-05-27 19:44:02</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>type</element>
+        <help/>
+        <hint/>
+        <label>Type</label>
+        <language>en</language>
+        <name>var__m_sys_hub_flow_input_9574370e2f8030108e0df64ef699b620</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-05-27 20:04:28</sys_created_on>
+        <sys_id>f773a4c32fd030108e0df64ef699b67c</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Azure Service Principal Secret Expiry Watchdog" source="x_337610_azure_ser">1d419bce2f0030108e0df64ef699b65c</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Azure Service Principal Secret Expiry Watchdog">1d419bce2f0030108e0df64ef699b65c</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-05-27 20:04:28</sys_updated_on>
         <url/>
         <url_target/>
     </sys_documentation>
@@ -844,19 +1149,19 @@
     </sys_choice>
     <sys_flow_subflow_plan action="delete_multiple" query="plan_id=9574370e2f8030108e0df64ef699b620^sys_idNOT IN81b73bce2f8030108e0df64ef699b653"/>
     <sys_flow_subflow_plan action="INSERT_OR_UPDATE">
-        <plan>com.snc.process_flow.engine.ProcessPlan@109e3d4</plan>
+        <plan>{"persistor":{"@class":".ChunkingPlanPersistor","table":"sys_flow_subflow_plan","id":"81b73bce2f8030108e0df64ef699b653","name":"plan"}}</plan>
         <plan_id display_value="Default Azure Service Principal processing flow">9574370e2f8030108e0df64ef699b620</plan_id>
-        <snapshot>a8b7f7ce2f8030108e0df64ef699b6d2</snapshot>
+        <snapshot>d288680b2fd030108e0df64ef699b6e8</snapshot>
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2021-05-12 22:42:00</sys_created_on>
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>81b73bce2f8030108e0df64ef699b653</sys_id>
-        <sys_mod_count>0</sys_mod_count>
+        <sys_mod_count>5</sys_mod_count>
         <sys_overrides/>
         <sys_scope/>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2021-05-12 22:42:00</sys_updated_on>
+        <sys_updated_on>2021-05-27 20:26:13</sys_updated_on>
     </sys_flow_subflow_plan>
     <sys_hub_flow_snapshot action="INSERT_OR_UPDATE">
         <access>package_private</access>
@@ -869,7 +1174,7 @@
         <copied_from_name/>
         <description/>
         <internal_name>default_azure_service_principal_processing_flow</internal_name>
-        <label_cache>[{"name":"subflow.expiring_object","label":"Input➛Expiring Object","reference":"","reference_display":"","type":"choice","base_type":"choice","column_name":"","attributes":{"uiType":"choice","uiTypeLabel":"Choice","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiUniqueId":"ce16497d-188e-475e-a5fc-97ea2e12ee31","sourceUiUniqueId":"","sourceType":"","sourceId":""}},{"name":"d3cc9c43-6e54-49be-8476-94b0dbf4f33f.Record","label":"1➛Service Task Record","reference":"service_task","reference_display":"Service Task","type":"reference","base_type":"reference","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"d3cc9c43-6e54-49be-8476-94b0dbf4f33f.Table","label":"1➛Service Task Table","reference":"service_task","reference_display":"Service Task","type":"table_name","base_type":"table_name","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"subflow.service_principal_name","label":"Input➛Service Principal Name","reference":"","reference_display":"","type":"string","base_type":"string","column_name":"","attributes":{"uiType":"string","uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiUniqueId":"e5da3b3b-c9fe-4034-a698-26201ee49cb7","sourceUiUniqueId":"","sourceType":"","sourceId":""}},{"name":"subflow.expiry_date","label":"Input➛Expiry Date","reference":"","reference_display":"","type":"glide_date","base_type":"glide_date","column_name":"","attributes":{"uiType":"glide_date","uiTypeLabel":"Date","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiUniqueId":"069af10b-4b30-42e3-bfe3-d54cee6be3f6","sourceUiUniqueId":"","sourceType":"","sourceId":""}}]</label_cache>
+        <label_cache>[{"name":"09d7b6bc-bfb9-427e-9cbf-dfaa00bb8f8a.Count","label":"2➛Count","reference_display":"Count","type":"integer","base_type":"integer","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"09d7b6bc-bfb9-427e-9cbf-dfaa00bb8f8a.Table","label":"2➛Table","reference_display":"Table","type":"table_name","base_type":"table_name","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"09d7b6bc-bfb9-427e-9cbf-dfaa00bb8f8a.Records","label":"2➛Records","reference_display":"Records","type":"records","base_type":"records","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"c97bc4fe-63c2-4474-bef0-45ec168b46e8.approval_state","label":"4➛Approval State","reference_display":"Approval State","type":"choice","base_type":"choice","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"a5ca96c6-f292-4642-9f87-d3c326eccef5.Count","label":"1➛Count","reference_display":"Count","type":"integer","base_type":"integer","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"a5ca96c6-f292-4642-9f87-d3c326eccef5.Table","label":"1➛Service Task Table","reference":"service_task","reference_display":"Service Task","type":"table_name","base_type":"table_name","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"a5ca96c6-f292-4642-9f87-d3c326eccef5.Records","label":"1➛Service Task Records","reference":"service_task","reference_display":"Service Task","type":"records","base_type":"records","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"a53f0210-3f57-4658-983b-322de2e7ae7b.error_message","label":"1➛Error Message","reference_display":"Error Message","type":"string","base_type":"string","attributes":{"uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","pwd2droppable":"true","uiType":"string","uiUniqueId":"87687532-9e3d-4497-a88e-90f45bfb9adb"}},{"name":"a53f0210-3f57-4658-983b-322de2e7ae7b.status","label":"1➛Status","reference_display":"Status","type":"choice","base_type":"choice","attributes":{"uiTypeLabel":"Choice","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"choice","uiUniqueId":"5e478657-3a84-4a60-a92b-d3e80005ad34"}},{"name":"a53f0210-3f57-4658-983b-322de2e7ae7b.Table","label":"1➛Service Task Table","reference":"service_task","reference_display":"Service Task","type":"table_name","base_type":"table_name","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"a53f0210-3f57-4658-983b-322de2e7ae7b.Record","label":"1➛Service Task Record","reference":"service_task","reference_display":"Service Task","type":"reference","base_type":"reference","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"subflow.secret_id","label":"Input➛Secret ID","reference":"","reference_display":"","type":"string","base_type":"string","column_name":"","attributes":{"uiType":"string","uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiUniqueId":"e401c65c-9991-4711-92ef-682d4ea63cb4","sourceUiUniqueId":"","sourceType":"","sourceId":""}},{"name":"subflow.secret_name","label":"Input➛Secret Name","reference":"","reference_display":"","type":"string","base_type":"string","column_name":"","attributes":{"uiType":"string","uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiUniqueId":"2e226cbd-30a3-4570-b1c6-44d662526761","sourceUiUniqueId":"","sourceType":"","sourceId":""}},{"name":"subflow.id","label":"Input➛ID","reference":"","reference_display":"","type":"string","base_type":"string","column_name":"","attributes":{"uiType":"string","uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiUniqueId":"a0bf4943-59ef-4d84-9d20-710a438c3b23","sourceUiUniqueId":"","sourceType":"","sourceId":""}},{"name":"subflow.expiry_date","label":"Input➛Expiry Date","reference":"","reference_display":"","type":"glide_date","base_type":"glide_date","column_name":"","attributes":{"uiType":"glide_date","uiTypeLabel":"Date","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiUniqueId":"069af10b-4b30-42e3-bfe3-d54cee6be3f6","sourceUiUniqueId":"","sourceType":"","sourceId":""}},{"name":"d3cc9c43-6e54-49be-8476-94b0dbf4f33f.Table","label":"3➛Service Task Table","reference":"service_task","reference_display":"Service Task","type":"table_name","base_type":"table_name","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"d3cc9c43-6e54-49be-8476-94b0dbf4f33f.Record","label":"3➛Service Task Record","reference":"service_task","reference_display":"Service Task","type":"reference","base_type":"reference","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"subflow.secret_type","label":"Input➛Secret Type","reference":"","reference_display":"","type":"choice","base_type":"choice","column_name":"","attributes":{"uiType":"choice","uiTypeLabel":"Choice","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiUniqueId":"ce16497d-188e-475e-a5fc-97ea2e12ee31","sourceUiUniqueId":"","sourceType":"","sourceId":""}},{"name":"subflow.name","label":"Input➛Name","reference":"","reference_display":"","type":"string","base_type":"string","column_name":"","attributes":{"uiType":"string","uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiUniqueId":"e5da3b3b-c9fe-4034-a698-26201ee49cb7","sourceUiUniqueId":"","sourceType":"","sourceId":""}}]</label_cache>
         <master>true</master>
         <name>Default Azure Service Principal processing flow</name>
         <natlang/>
@@ -886,7 +1191,7 @@
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>a8b7f7ce2f8030108e0df64ef699b6d2</sys_id>
-        <sys_mod_count>0</sys_mod_count>
+        <sys_mod_count>5</sys_mod_count>
         <sys_name/>
         <sys_overrides/>
         <sys_package/>
@@ -894,7 +1199,7 @@
         <sys_scope display_value="Azure Service Principal Secret Expiry Watchdog">1d419bce2f0030108e0df64ef699b65c</sys_scope>
         <sys_update_name/>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2021-05-12 22:41:58</sys_updated_on>
+        <sys_updated_on>2021-05-27 20:26:11</sys_updated_on>
         <type>subflow</type>
     </sys_hub_flow_snapshot>
     <sys_translated_text action="delete_multiple" query="documentkey=a8b7f7ce2f8030108e0df64ef699b6d2"/>
@@ -911,12 +1216,12 @@
         <sys_updated_by>admin</sys_updated_by>
         <sys_updated_on>2021-05-12 22:41:58</sys_updated_on>
     </sys_flow_cat_variable_model>
-    <sys_hub_flow_input action="delete_multiple" query="model=a8b7f7ce2f8030108e0df64ef699b6d2^sys_idNOT IN24b7f7ce2f8030108e0df64ef699b6d5,3cb73bce2f8030108e0df64ef699b619,6cb7f7ce2f8030108e0df64ef699b6f7,ecb73bce2f8030108e0df64ef699b60e"/>
+    <sys_hub_flow_input action="delete_multiple" query="model=a8b7f7ce2f8030108e0df64ef699b6d2^sys_idNOT IN1f8328c32fd030108e0df64ef699b6aa,46c53fbe2f1030108e0df64ef699b663,46c53fbe2f1030108e0df64ef699b671,478328c32fd030108e0df64ef699b688,5f8328c32fd030108e0df64ef699b69f,9ec53fbe2f1030108e0df64ef699b692,ecb73bce2f8030108e0df64ef699b60e"/>
     <sys_hub_flow_input action="INSERT_OR_UPDATE">
         <active>true</active>
         <array>false</array>
         <array_denormalized>false</array_denormalized>
-        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=string,uiTypeLabel=String,uiUniqueId=e5da3b3b-c9fe-4034-a698-26201ee49cb7</attributes>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=string,uiTypeLabel=String,uiUniqueId=a0bf4943-59ef-4d84-9d20-710a438c3b23</attributes>
         <audit>false</audit>
         <calculation><![CDATA[(function calculatedFieldValue(current) {
 
@@ -940,7 +1245,7 @@
         <dynamic_creation_script/>
         <dynamic_default_value/>
         <dynamic_ref_qual/>
-        <element>service_principal_name</element>
+        <element>id</element>
         <element_reference>false</element_reference>
         <foreign_database/>
         <function_definition/>
@@ -948,7 +1253,7 @@
         <help/>
         <hint/>
         <internal_type display_value="String">string</internal_type>
-        <label>Service Principal Name</label>
+        <label>ID</label>
         <mandatory>false</mandatory>
         <max_length>8000</max_length>
         <model display_value="Default Azure Service Principal processing flow">a8b7f7ce2f8030108e0df64ef699b6d2</model>
@@ -956,7 +1261,7 @@
         <model_table>sys_hub_flow_snapshot</model_table>
         <name>var__m_sys_hub_flow_input_a8b7f7ce2f8030108e0df64ef699b6d2</name>
         <next_element/>
-        <order>1</order>
+        <order>3</order>
         <primary>false</primary>
         <read_only>false</read_only>
         <read_roles/>
@@ -972,8 +1277,8 @@
         <staged>false</staged>
         <sys_class_name>sys_hub_flow_input</sys_class_name>
         <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2021-05-12 22:41:58</sys_created_on>
-        <sys_id>24b7f7ce2f8030108e0df64ef699b6d5</sys_id>
+        <sys_created_on>2021-05-27 20:04:42</sys_created_on>
+        <sys_id>1f8328c32fd030108e0df64ef699b6aa</sys_id>
         <sys_mod_count>0</sys_mod_count>
         <sys_name/>
         <sys_package/>
@@ -981,7 +1286,88 @@
         <sys_scope display_value="Azure Service Principal Secret Expiry Watchdog">1d419bce2f0030108e0df64ef699b65c</sys_scope>
         <sys_update_name/>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2021-05-12 22:41:58</sys_updated_on>
+        <sys_updated_on>2021-05-27 20:04:42</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_input>
+    <sys_hub_flow_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=string,uiTypeLabel=String,uiUniqueId=2e226cbd-30a3-4570-b1c6-44d662526761</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>secret_name</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="String">string</internal_type>
+        <label>Secret Name</label>
+        <mandatory>false</mandatory>
+        <max_length>8000</max_length>
+        <model display_value="Default Azure Service Principal processing flow">a8b7f7ce2f8030108e0df64ef699b6d2</model>
+        <model_id>a8b7f7ce2f8030108e0df64ef699b6d2</model_id>
+        <model_table>sys_hub_flow_snapshot</model_table>
+        <name>var__m_sys_hub_flow_input_a8b7f7ce2f8030108e0df64ef699b6d2</name>
+        <next_element/>
+        <order>5</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_input</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-05-27 16:44:44</sys_created_on>
+        <sys_id>46c53fbe2f1030108e0df64ef699b663</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Azure Service Principal Secret Expiry Watchdog">1d419bce2f0030108e0df64ef699b65c</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-05-27 20:04:43</sys_updated_on>
         <table_reference>false</table_reference>
         <text_index>false</text_index>
         <unique>false</unique>
@@ -1021,7 +1407,7 @@
         <dynamic_creation_script/>
         <dynamic_default_value/>
         <dynamic_ref_qual/>
-        <element>expiring_object</element>
+        <element>secret_type</element>
         <element_reference>false</element_reference>
         <foreign_database/>
         <function_definition/>
@@ -1029,7 +1415,7 @@
         <help/>
         <hint/>
         <internal_type display_value="Choice">choice</internal_type>
-        <label>Expiring Object</label>
+        <label>Secret Type</label>
         <mandatory>false</mandatory>
         <max_length>40</max_length>
         <model display_value="Default Azure Service Principal processing flow">a8b7f7ce2f8030108e0df64ef699b6d2</model>
@@ -1053,8 +1439,8 @@
         <staged>false</staged>
         <sys_class_name>sys_hub_flow_input</sys_class_name>
         <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2021-05-12 22:41:59</sys_created_on>
-        <sys_id>3cb73bce2f8030108e0df64ef699b619</sys_id>
+        <sys_created_on>2021-05-27 16:44:45</sys_created_on>
+        <sys_id>46c53fbe2f1030108e0df64ef699b671</sys_id>
         <sys_mod_count>1</sys_mod_count>
         <sys_name/>
         <sys_package/>
@@ -1062,7 +1448,7 @@
         <sys_scope display_value="Azure Service Principal Secret Expiry Watchdog">1d419bce2f0030108e0df64ef699b65c</sys_scope>
         <sys_update_name/>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2021-05-12 22:41:59</sys_updated_on>
+        <sys_updated_on>2021-05-27 16:44:45</sys_updated_on>
         <table_reference>false</table_reference>
         <text_index>false</text_index>
         <unique>false</unique>
@@ -1078,7 +1464,7 @@
         <active>true</active>
         <array>false</array>
         <array_denormalized>false</array_denormalized>
-        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=string,uiTypeLabel=String,uiUniqueId=a0bf4943-59ef-4d84-9d20-710a438c3b23</attributes>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=string,uiTypeLabel=String,uiUniqueId=c2cc1060-8dea-4a3a-8097-e3b6cd21c025</attributes>
         <audit>false</audit>
         <calculation><![CDATA[(function calculatedFieldValue(current) {
 
@@ -1102,7 +1488,7 @@
         <dynamic_creation_script/>
         <dynamic_default_value/>
         <dynamic_ref_qual/>
-        <element>service_principal_id</element>
+        <element>type</element>
         <element_reference>false</element_reference>
         <foreign_database/>
         <function_definition/>
@@ -1110,7 +1496,88 @@
         <help/>
         <hint/>
         <internal_type display_value="String">string</internal_type>
-        <label>Service Principal ID</label>
+        <label>Type</label>
+        <mandatory>false</mandatory>
+        <max_length>8000</max_length>
+        <model display_value="Default Azure Service Principal processing flow">a8b7f7ce2f8030108e0df64ef699b6d2</model>
+        <model_id>a8b7f7ce2f8030108e0df64ef699b6d2</model_id>
+        <model_table>sys_hub_flow_snapshot</model_table>
+        <name>var__m_sys_hub_flow_input_a8b7f7ce2f8030108e0df64ef699b6d2</name>
+        <next_element/>
+        <order>1</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_input</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-05-27 20:04:42</sys_created_on>
+        <sys_id>478328c32fd030108e0df64ef699b688</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Azure Service Principal Secret Expiry Watchdog">1d419bce2f0030108e0df64ef699b65c</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-05-27 20:04:42</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_input>
+    <sys_hub_flow_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=string,uiTypeLabel=String,uiUniqueId=e5da3b3b-c9fe-4034-a698-26201ee49cb7</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>name</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="String">string</internal_type>
+        <label>Name</label>
         <mandatory>false</mandatory>
         <max_length>8000</max_length>
         <model display_value="Default Azure Service Principal processing flow">a8b7f7ce2f8030108e0df64ef699b6d2</model>
@@ -1134,8 +1601,8 @@
         <staged>false</staged>
         <sys_class_name>sys_hub_flow_input</sys_class_name>
         <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2021-05-12 22:41:58</sys_created_on>
-        <sys_id>6cb7f7ce2f8030108e0df64ef699b6f7</sys_id>
+        <sys_created_on>2021-05-27 20:04:42</sys_created_on>
+        <sys_id>5f8328c32fd030108e0df64ef699b69f</sys_id>
         <sys_mod_count>0</sys_mod_count>
         <sys_name/>
         <sys_package/>
@@ -1143,7 +1610,88 @@
         <sys_scope display_value="Azure Service Principal Secret Expiry Watchdog">1d419bce2f0030108e0df64ef699b65c</sys_scope>
         <sys_update_name/>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2021-05-12 22:41:58</sys_updated_on>
+        <sys_updated_on>2021-05-27 20:04:42</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_input>
+    <sys_hub_flow_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=string,uiTypeLabel=String,uiUniqueId=e401c65c-9991-4711-92ef-682d4ea63cb4</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>secret_id</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="String">string</internal_type>
+        <label>Secret ID</label>
+        <mandatory>false</mandatory>
+        <max_length>8000</max_length>
+        <model display_value="Default Azure Service Principal processing flow">a8b7f7ce2f8030108e0df64ef699b6d2</model>
+        <model_id>a8b7f7ce2f8030108e0df64ef699b6d2</model_id>
+        <model_table>sys_hub_flow_snapshot</model_table>
+        <name>var__m_sys_hub_flow_input_a8b7f7ce2f8030108e0df64ef699b6d2</name>
+        <next_element/>
+        <order>6</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_input</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-05-27 16:44:45</sys_created_on>
+        <sys_id>9ec53fbe2f1030108e0df64ef699b692</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Azure Service Principal Secret Expiry Watchdog">1d419bce2f0030108e0df64ef699b65c</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-05-27 20:04:43</sys_updated_on>
         <table_reference>false</table_reference>
         <text_index>false</text_index>
         <unique>false</unique>
@@ -1199,7 +1747,7 @@
         <model_table>sys_hub_flow_snapshot</model_table>
         <name>var__m_sys_hub_flow_input_a8b7f7ce2f8030108e0df64ef699b6d2</name>
         <next_element/>
-        <order>3</order>
+        <order>7</order>
         <primary>false</primary>
         <read_only>false</read_only>
         <read_roles/>
@@ -1217,14 +1765,14 @@
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2021-05-12 22:41:58</sys_created_on>
         <sys_id>ecb73bce2f8030108e0df64ef699b60e</sys_id>
-        <sys_mod_count>0</sys_mod_count>
+        <sys_mod_count>2</sys_mod_count>
         <sys_name/>
         <sys_package/>
         <sys_policy/>
         <sys_scope display_value="Azure Service Principal Secret Expiry Watchdog">1d419bce2f0030108e0df64ef699b65c</sys_scope>
         <sys_update_name/>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2021-05-12 22:41:58</sys_updated_on>
+        <sys_updated_on>2021-05-27 20:04:43</sys_updated_on>
         <table_reference>false</table_reference>
         <text_index>false</text_index>
         <unique>false</unique>
@@ -1236,9 +1784,8 @@
         <write_roles/>
         <xml_view>false</xml_view>
     </sys_hub_flow_input>
-    <sys_hub_action_instance action="delete_multiple" query="flow=a8b7f7ce2f8030108e0df64ef699b6d2^sys_idNOT IN30b73bce2f8030108e0df64ef699b638"/>
+    <sys_hub_action_instance action="delete_multiple" query="flow=a8b7f7ce2f8030108e0df64ef699b6d2^sys_idNOT IN30b73bce2f8030108e0df64ef699b638,b78368c32fd030108e0df64ef699b61e,e78368c32fd030108e0df64ef699b614"/>
     <sys_hub_action_instance action="INSERT_OR_UPDATE">
-        <action_inputs/>
         <action_inputs/>
         <action_type display_value="Create Task">2b3a6335531003003bf1d9109ec58759</action_type>
         <action_type_parent display_value="Create Task">3f9b1ff1531003003bf1d9109ec58775</action_type_parent>
@@ -1246,16 +1793,16 @@
         <compiled_snapshot>2b3a6335531003003bf1d9109ec58759</compiled_snapshot>
         <display_text/>
         <flow display_value="Default Azure Service Principal processing flow">a8b7f7ce2f8030108e0df64ef699b6d2</flow>
-        <order>1</order>
-        <parent_ui_id/>
+        <order>3</order>
+        <parent_ui_id>1c1d2d57-3fcc-4ea7-9d96-78db5e5e01d4</parent_ui_id>
         <sys_class_name>sys_hub_action_instance</sys_class_name>
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2021-05-12 22:41:59</sys_created_on>
         <sys_id>30b73bce2f8030108e0df64ef699b638</sys_id>
-        <sys_mod_count>2</sys_mod_count>
+        <sys_mod_count>22</sys_mod_count>
         <sys_scope display_value="Azure Service Principal Secret Expiry Watchdog">1d419bce2f0030108e0df64ef699b65c</sys_scope>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2021-05-12 22:41:59</sys_updated_on>
+        <sys_updated_on>2021-05-27 20:26:11</sys_updated_on>
         <ui_id>d3cc9c43-6e54-49be-8476-94b0dbf4f33f</ui_id>
     </sys_hub_action_instance>
     <sys_variable_value action="delete_multiple" query="document_key=30b73bce2f8030108e0df64ef699b638"/>
@@ -1273,58 +1820,260 @@
         <value>service_task</value>
         <variable display_value="Table">e73a6335531003003bf1d9109ec5875c</variable>
     </sys_variable_value>
-    <sys_element_mapping action="delete_multiple" query="id=30b73bce2f8030108e0df64ef699b638"/>
-    <sys_element_mapping action="INSERT_OR_UPDATE">
-        <field>field_values</field>
-        <id>30b73bce2f8030108e0df64ef699b638</id>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>30b73bce2f8030108e0df64ef699b638</document_key>
+        <order>1</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
         <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2021-05-12 22:41:59</sys_created_on>
-        <sys_id>f4b73bce2f8030108e0df64ef699b639</sys_id>
+        <sys_created_on>2021-05-27 20:04:44</sys_created_on>
+        <sys_id>7b8368c32fd030108e0df64ef699b619</sys_id>
         <sys_mod_count>0</sys_mod_count>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2021-05-12 22:41:59</sys_updated_on>
-        <table>var__m_sys_hub_action_input_2b3a6335531003003bf1d9109ec58759</table>
-        <value>short_description={{subflow.expiring_object}} of service principal {{subflow.service_principal_name}} expires on {{subflow.expiry_date}}^assignment_group=fd-scripted</value>
-    </sys_element_mapping>
-    <sys_element_mapping action="INSERT_OR_UPDATE">
-        <field>task_table</field>
-        <id>30b73bce2f8030108e0df64ef699b638</id>
-        <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2021-05-12 22:41:59</sys_created_on>
-        <sys_id>34b73bce2f8030108e0df64ef699b639</sys_id>
-        <sys_mod_count>0</sys_mod_count>
-        <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2021-05-12 22:41:59</sys_updated_on>
-        <table>var__m_sys_hub_action_input_2b3a6335531003003bf1d9109ec58759</table>
-        <value/>
-    </sys_element_mapping>
+        <sys_updated_on>2021-05-27 20:04:44</sys_updated_on>
+        <value>short_description=fd-scripted^assignment_group=fd-scripted</value>
+        <variable display_value="Field Values">273a6335531003003bf1d9109ec5876b</variable>
+    </sys_variable_value>
     <sys_hub_input_scripts action="delete_multiple" query="instance=30b73bce2f8030108e0df64ef699b638^sys_idNOT INfcb73bce2f8030108e0df64ef699b638"/>
     <sys_hub_input_scripts action="INSERT_OR_UPDATE">
         <active>true</active>
         <input_name>field_values</input_name>
         <instance>30b73bce2f8030108e0df64ef699b638</instance>
         <referenced_table>sys_hub_action_instance</referenced_table>
-        <script>{"assignment_group":{"scriptActive":true,"script":"return gs.getProperty(\u0027x_337610_azure_ser.azure.service.principal.assignment.group\u0027);","savedValue":""}}</script>
+        <script>{"short_description":{"scriptActive":true,"script":"return fd_data.trigger.secret_type+\u0027 (\u0027 + fd_data.trigger.secret_id +\u0027) of \u0027+ fd_data.trigger.type +\u0027 (\u0027+ fd_data.trigger.id +\u0027) expires on \u0027+ fd_data.trigger.expiry_date;","savedValue":""},"assignment_group":{"scriptActive":true,"script":"return gs.getProperty(\u0027x_337610_azure_ser.azure.service.principal.assignment.group\u0027);","savedValue":""}}</script>
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2021-05-12 22:41:59</sys_created_on>
         <sys_id>fcb73bce2f8030108e0df64ef699b638</sys_id>
-        <sys_mod_count>0</sys_mod_count>
+        <sys_mod_count>2</sys_mod_count>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2021-05-12 22:41:59</sys_updated_on>
+        <sys_updated_on>2021-05-27 20:12:32</sys_updated_on>
     </sys_hub_input_scripts>
-    <sys_documentation action="delete_multiple" query="name=var__m_sys_hub_flow_input_a8b7f7ce2f8030108e0df64ef699b6d2^sys_idNOT IN2cb7f7ce2f8030108e0df64ef699b6f3,b0b73bce2f8030108e0df64ef699b62a,e4b7f7ce2f8030108e0df64ef699b6fe,e8b73bce2f8030108e0df64ef699b615"/>
+    <sys_hub_action_instance action="INSERT_OR_UPDATE">
+        <action_inputs/>
+        <action_type display_value="Log">5bc1bcc6531003003bf1d9109ec587d4</action_type>
+        <action_type_parent display_value="Log">0e0ae8c2531003003bf1d9109ec587c8</action_type_parent>
+        <comment/>
+        <compiled_snapshot>5bc1bcc6531003003bf1d9109ec587d4</compiled_snapshot>
+        <display_text/>
+        <flow display_value="Default Azure Service Principal processing flow">a8b7f7ce2f8030108e0df64ef699b6d2</flow>
+        <order>5</order>
+        <parent_ui_id>89b938a8-2fd0-46b5-ac6a-2c59237499d7</parent_ui_id>
+        <sys_class_name>sys_hub_action_instance</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-05-27 20:04:44</sys_created_on>
+        <sys_id>b78368c32fd030108e0df64ef699b61e</sys_id>
+        <sys_mod_count>16</sys_mod_count>
+        <sys_scope display_value="Azure Service Principal Secret Expiry Watchdog">1d419bce2f0030108e0df64ef699b65c</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-05-27 20:26:11</sys_updated_on>
+        <ui_id>2ca1a5f9-c246-4721-9723-347ece75ee03</ui_id>
+    </sys_hub_action_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=b78368c32fd030108e0df64ef699b61e"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>b78368c32fd030108e0df64ef699b61e</document_key>
+        <order>1</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-05-27 20:04:44</sys_created_on>
+        <sys_id>f78368c32fd030108e0df64ef699b61f</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-05-27 20:04:44</sys_updated_on>
+        <value>Task with short description found -&gt; do not create new one.</value>
+        <variable display_value="Message">23c1bcc6531003003bf1d9109ec587e5</variable>
+    </sys_variable_value>
+    <sys_hub_action_instance action="INSERT_OR_UPDATE">
+        <action_inputs/>
+        <action_type display_value="Look Up Records">43400a1587003300663ca1bb36cb0b4b</action_type>
+        <action_type_parent display_value="Look Up Records">d1c56ec50b30030085c083eb37673a50</action_type_parent>
+        <comment/>
+        <compiled_snapshot>43400a1587003300663ca1bb36cb0b4b</compiled_snapshot>
+        <display_text/>
+        <flow display_value="Default Azure Service Principal processing flow">a8b7f7ce2f8030108e0df64ef699b6d2</flow>
+        <order>1</order>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_action_instance</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-05-27 20:04:44</sys_created_on>
+        <sys_id>e78368c32fd030108e0df64ef699b614</sys_id>
+        <sys_mod_count>16</sys_mod_count>
+        <sys_scope display_value="Azure Service Principal Secret Expiry Watchdog">1d419bce2f0030108e0df64ef699b65c</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-05-27 20:26:11</sys_updated_on>
+        <ui_id>a5ca96c6-f292-4642-9f87-d3c326eccef5</ui_id>
+    </sys_hub_action_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=e78368c32fd030108e0df64ef699b614"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>e78368c32fd030108e0df64ef699b614</document_key>
+        <order>4</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-05-27 20:04:44</sys_created_on>
+        <sys_id>378368c32fd030108e0df64ef699b616</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-05-27 20:04:44</sys_updated_on>
+        <value>1</value>
+        <variable display_value="Max Results">4f400a1587003300663ca1bb36cb0b61</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>e78368c32fd030108e0df64ef699b614</document_key>
+        <order>1</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-05-27 20:23:28</sys_created_on>
+        <sys_id>82d7a8c72fd030108e0df64ef699b670</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-05-27 20:23:28</sys_updated_on>
+        <value>short_description=password (0eb4e550-65a9-4514-a687-03f1b5d9f46c) of Application (avocodo-simple-function) expires on 2019-10-03 06:23:33</value>
+        <variable display_value="Conditions">8f400a1587003300663ca1bb36cb0b50</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>e78368c32fd030108e0df64ef699b614</document_key>
+        <order>0</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-05-27 20:04:44</sys_created_on>
+        <sys_id>f78368c32fd030108e0df64ef699b616</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-05-27 20:04:44</sys_updated_on>
+        <value>service_task</value>
+        <variable display_value="Table">8f400a1587003300663ca1bb36cb0b4b</variable>
+    </sys_variable_value>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=e78368c32fd030108e0df64ef699b614^sys_idNOT IN2b8368c32fd030108e0df64ef699b615"/>
+    <sys_hub_input_scripts action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <input_name>conditions</input_name>
+        <instance>e78368c32fd030108e0df64ef699b614</instance>
+        <referenced_table>sys_hub_action_instance</referenced_table>
+        <script>{"conditions":{"scriptActive":true,"script":"return \u0027short_description\u003d\u0027+fd_data.trigger.secret_type+\u0027 (\u0027 + fd_data.trigger.secret_id +\u0027) of \u0027+ fd_data.trigger.type +\u0027 (\u0027+ fd_data.trigger.id +\u0027) expires on \u0027+ fd_data.trigger.expiry_date;"}}</script>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-05-27 20:04:44</sys_created_on>
+        <sys_id>2b8368c32fd030108e0df64ef699b615</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-05-27 20:26:09</sys_updated_on>
+    </sys_hub_input_scripts>
+    <sys_hub_flow_logic action="delete_multiple" query="flow=a8b7f7ce2f8030108e0df64ef699b6d2^sys_idNOT INf38368c32fd030108e0df64ef699b620,fb8368c32fd030108e0df64ef699b624"/>
+    <sys_hub_flow_logic action="INSERT_OR_UPDATE">
+        <block display_value="">8883a4c32fd030108e0df64ef699b6e1</block>
+        <comment/>
+        <connected_to/>
+        <decision_table/>
+        <decision_table_inputs/>
+        <display_text/>
+        <extended_inputs/>
+        <flow display_value="Default Azure Service Principal processing flow">a8b7f7ce2f8030108e0df64ef699b6d2</flow>
+        <flow_variable/>
+        <flow_variables_assigned/>
+        <inputs/>
+        <inputs/>
+        <logic_definition display_value="If">af4e1945c3e232002841b63b12d3ae3e</logic_definition>
+        <order>2</order>
+        <outputs_assigned/>
+        <outputs_to_assign/>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_flow_logic</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-05-27 20:04:44</sys_created_on>
+        <sys_id>f38368c32fd030108e0df64ef699b620</sys_id>
+        <sys_mod_count>9</sys_mod_count>
+        <sys_scope display_value="Azure Service Principal Secret Expiry Watchdog">1d419bce2f0030108e0df64ef699b65c</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-05-27 20:26:11</sys_updated_on>
+        <ui_id>1c1d2d57-3fcc-4ea7-9d96-78db5e5e01d4</ui_id>
+        <workflow_inputs/>
+        <workflow_reference/>
+    </sys_hub_flow_logic>
+    <sys_variable_value action="delete_multiple" query="document_key=f38368c32fd030108e0df64ef699b620"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_flow_logic</document>
+        <document_key>f38368c32fd030108e0df64ef699b620</document_key>
+        <order>10</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-05-27 20:04:44</sys_created_on>
+        <sys_id>ff8368c32fd030108e0df64ef699b623</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-05-27 20:04:44</sys_updated_on>
+        <value>Task not yet created</value>
+        <variable display_value="Condition Label">f0af19c1c32632002841b63b12d3aea3</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="id=f38368c32fd030108e0df64ef699b620"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>condition</field>
+        <id>f38368c32fd030108e0df64ef699b620</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-05-27 20:04:44</sys_created_on>
+        <sys_id>7f8368c32fd030108e0df64ef699b623</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-05-27 20:04:44</sys_updated_on>
+        <table>var__m_sys_hub_flow_logic_input_af4e1945c3e232002841b63b12d3ae3e</table>
+        <value>{{a5ca96c6-f292-4642-9f87-d3c326eccef5.Count}}=0</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>condition_name</field>
+        <id>f38368c32fd030108e0df64ef699b620</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-05-27 20:04:44</sys_created_on>
+        <sys_id>bb8368c32fd030108e0df64ef699b623</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-05-27 20:04:44</sys_updated_on>
+        <table>var__m_sys_hub_flow_logic_input_af4e1945c3e232002841b63b12d3ae3e</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_hub_flow_logic action="INSERT_OR_UPDATE">
+        <block display_value="">d883e4c32fd030108e0df64ef699b60f</block>
+        <comment/>
+        <connected_to>1c1d2d57-3fcc-4ea7-9d96-78db5e5e01d4</connected_to>
+        <decision_table/>
+        <decision_table_inputs/>
+        <display_text/>
+        <extended_inputs/>
+        <flow display_value="Default Azure Service Principal processing flow">a8b7f7ce2f8030108e0df64ef699b6d2</flow>
+        <flow_variable/>
+        <flow_variables_assigned/>
+        <inputs/>
+        <logic_definition display_value="Else">1f781bf3c32232002841b63b12d3aee6</logic_definition>
+        <order>4</order>
+        <outputs_assigned/>
+        <outputs_to_assign/>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_flow_logic</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-05-27 20:04:44</sys_created_on>
+        <sys_id>fb8368c32fd030108e0df64ef699b624</sys_id>
+        <sys_mod_count>9</sys_mod_count>
+        <sys_scope display_value="Azure Service Principal Secret Expiry Watchdog">1d419bce2f0030108e0df64ef699b65c</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-05-27 20:26:11</sys_updated_on>
+        <ui_id>89b938a8-2fd0-46b5-ac6a-2c59237499d7</ui_id>
+        <workflow_inputs/>
+        <workflow_reference/>
+    </sys_hub_flow_logic>
+    <sys_variable_value action="delete_multiple" query="document_key=fb8368c32fd030108e0df64ef699b624"/>
+    <sys_documentation action="delete_multiple" query="name=var__m_sys_hub_flow_input_a8b7f7ce2f8030108e0df64ef699b6d2^sys_idNOT IN1ec53fbe2f1030108e0df64ef699b699,1f8328c32fd030108e0df64ef699b69b,5ec53fbe2f1030108e0df64ef699b68e,cec53fbe2f1030108e0df64ef699b66c,db8328c32fd030108e0df64ef699b6a6,db8328c32fd030108e0df64ef699b6b1,e8b73bce2f8030108e0df64ef699b615"/>
     <sys_documentation action="INSERT_OR_UPDATE">
-        <element>service_principal_name</element>
+        <element>secret_id</element>
         <help/>
         <hint/>
-        <label>Service Principal Name</label>
+        <label>Secret ID</label>
         <language>en</language>
         <name>var__m_sys_hub_flow_input_a8b7f7ce2f8030108e0df64ef699b6d2</name>
         <plural/>
         <sys_class_name>sys_documentation</sys_class_name>
         <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2021-05-12 22:41:58</sys_created_on>
-        <sys_id>2cb7f7ce2f8030108e0df64ef699b6f3</sys_id>
+        <sys_created_on>2021-05-27 16:44:45</sys_created_on>
+        <sys_id>1ec53fbe2f1030108e0df64ef699b699</sys_id>
         <sys_mod_count>0</sys_mod_count>
         <sys_name/>
         <sys_package display_value="Azure Service Principal Secret Expiry Watchdog" source="x_337610_azure_ser">1d419bce2f0030108e0df64ef699b65c</sys_package>
@@ -1332,22 +2081,22 @@
         <sys_scope display_value="Azure Service Principal Secret Expiry Watchdog">1d419bce2f0030108e0df64ef699b65c</sys_scope>
         <sys_update_name/>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2021-05-12 22:41:58</sys_updated_on>
+        <sys_updated_on>2021-05-27 16:44:45</sys_updated_on>
         <url/>
         <url_target/>
     </sys_documentation>
     <sys_documentation action="INSERT_OR_UPDATE">
-        <element>expiring_object</element>
+        <element>type</element>
         <help/>
         <hint/>
-        <label>Expiring Object</label>
+        <label>Type</label>
         <language>en</language>
         <name>var__m_sys_hub_flow_input_a8b7f7ce2f8030108e0df64ef699b6d2</name>
         <plural/>
         <sys_class_name>sys_documentation</sys_class_name>
         <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2021-05-12 22:41:59</sys_created_on>
-        <sys_id>b0b73bce2f8030108e0df64ef699b62a</sys_id>
+        <sys_created_on>2021-05-27 20:04:42</sys_created_on>
+        <sys_id>1f8328c32fd030108e0df64ef699b69b</sys_id>
         <sys_mod_count>0</sys_mod_count>
         <sys_name/>
         <sys_package display_value="Azure Service Principal Secret Expiry Watchdog" source="x_337610_azure_ser">1d419bce2f0030108e0df64ef699b65c</sys_package>
@@ -1355,22 +2104,22 @@
         <sys_scope display_value="Azure Service Principal Secret Expiry Watchdog">1d419bce2f0030108e0df64ef699b65c</sys_scope>
         <sys_update_name/>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2021-05-12 22:41:59</sys_updated_on>
+        <sys_updated_on>2021-05-27 20:04:42</sys_updated_on>
         <url/>
         <url_target/>
     </sys_documentation>
     <sys_documentation action="INSERT_OR_UPDATE">
-        <element>service_principal_id</element>
+        <element>secret_type</element>
         <help/>
         <hint/>
-        <label>Service Principal ID</label>
+        <label>Secret Type</label>
         <language>en</language>
         <name>var__m_sys_hub_flow_input_a8b7f7ce2f8030108e0df64ef699b6d2</name>
         <plural/>
         <sys_class_name>sys_documentation</sys_class_name>
         <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2021-05-12 22:41:58</sys_created_on>
-        <sys_id>e4b7f7ce2f8030108e0df64ef699b6fe</sys_id>
+        <sys_created_on>2021-05-27 16:44:45</sys_created_on>
+        <sys_id>5ec53fbe2f1030108e0df64ef699b68e</sys_id>
         <sys_mod_count>0</sys_mod_count>
         <sys_name/>
         <sys_package display_value="Azure Service Principal Secret Expiry Watchdog" source="x_337610_azure_ser">1d419bce2f0030108e0df64ef699b65c</sys_package>
@@ -1378,7 +2127,76 @@
         <sys_scope display_value="Azure Service Principal Secret Expiry Watchdog">1d419bce2f0030108e0df64ef699b65c</sys_scope>
         <sys_update_name/>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2021-05-12 22:41:58</sys_updated_on>
+        <sys_updated_on>2021-05-27 16:44:45</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>secret_name</element>
+        <help/>
+        <hint/>
+        <label>Secret Name</label>
+        <language>en</language>
+        <name>var__m_sys_hub_flow_input_a8b7f7ce2f8030108e0df64ef699b6d2</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-05-27 16:44:45</sys_created_on>
+        <sys_id>cec53fbe2f1030108e0df64ef699b66c</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Azure Service Principal Secret Expiry Watchdog" source="x_337610_azure_ser">1d419bce2f0030108e0df64ef699b65c</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Azure Service Principal Secret Expiry Watchdog">1d419bce2f0030108e0df64ef699b65c</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-05-27 16:44:45</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>name</element>
+        <help/>
+        <hint/>
+        <label>Name</label>
+        <language>en</language>
+        <name>var__m_sys_hub_flow_input_a8b7f7ce2f8030108e0df64ef699b6d2</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-05-27 20:04:42</sys_created_on>
+        <sys_id>db8328c32fd030108e0df64ef699b6a6</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Azure Service Principal Secret Expiry Watchdog" source="x_337610_azure_ser">1d419bce2f0030108e0df64ef699b65c</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Azure Service Principal Secret Expiry Watchdog">1d419bce2f0030108e0df64ef699b65c</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-05-27 20:04:42</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>id</element>
+        <help/>
+        <hint/>
+        <label>ID</label>
+        <language>en</language>
+        <name>var__m_sys_hub_flow_input_a8b7f7ce2f8030108e0df64ef699b6d2</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-05-27 20:04:43</sys_created_on>
+        <sys_id>db8328c32fd030108e0df64ef699b6b1</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Azure Service Principal Secret Expiry Watchdog" source="x_337610_azure_ser">1d419bce2f0030108e0df64ef699b65c</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Azure Service Principal Secret Expiry Watchdog">1d419bce2f0030108e0df64ef699b65c</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-05-27 20:04:43</sys_updated_on>
         <url/>
         <url_target/>
     </sys_documentation>
@@ -1405,7 +2223,7 @@
         <url/>
         <url_target/>
     </sys_documentation>
-    <sys_choice action="delete_multiple" query="name=var__m_sys_hub_flow_input_a8b7f7ce2f8030108e0df64ef699b6d2^sys_idNOT IN74b73bce2f8030108e0df64ef699b61f,38b73bce2f8030108e0df64ef699b621"/>
+    <sys_choice action="delete_multiple" query="name=var__m_sys_hub_flow_input_a8b7f7ce2f8030108e0df64ef699b6d2^sys_idNOT IN74b73bce2f8030108e0df64ef699b61f,38b73bce2f8030108e0df64ef699b621,dec53fbe2f1030108e0df64ef699b676,16c53fbe2f1030108e0df64ef699b679"/>
     <sys_choice field="expiring_object" table="var__m_sys_hub_flow_input_a8b7f7ce2f8030108e0df64ef699b6d2">
         <sys_choice action="INSERT_OR_UPDATE">
             <dependent_value/>
@@ -1445,6 +2263,48 @@
             <sys_mod_count>0</sys_mod_count>
             <sys_updated_by>admin</sys_updated_by>
             <sys_updated_on>2021-05-12 22:41:59</sys_updated_on>
+            <value>certificate</value>
+        </sys_choice>
+    </sys_choice>
+    <sys_choice field="secret_type" table="var__m_sys_hub_flow_input_a8b7f7ce2f8030108e0df64ef699b6d2">
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>secret_type</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Password</label>
+            <language>en</language>
+            <name>var__m_sys_hub_flow_input_a8b7f7ce2f8030108e0df64ef699b6d2</name>
+            <sequence>1</sequence>
+            <synonyms/>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2021-05-27 16:44:45</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>dec53fbe2f1030108e0df64ef699b676</sys_id>
+            <sys_mod_count>9</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2021-05-27 20:26:10</sys_updated_on>
+            <value>password</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>secret_type</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Certificate</label>
+            <language>en</language>
+            <name>var__m_sys_hub_flow_input_a8b7f7ce2f8030108e0df64ef699b6d2</name>
+            <sequence>2</sequence>
+            <synonyms/>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2021-05-27 16:44:45</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>16c53fbe2f1030108e0df64ef699b679</sys_id>
+            <sys_mod_count>9</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2021-05-27 20:26:10</sys_updated_on>
             <value>certificate</value>
         </sys_choice>
     </sys_choice>
