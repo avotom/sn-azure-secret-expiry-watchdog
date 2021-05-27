@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update>
+    <sys_choice action="INSERT_OR_UPDATE" field="expiring_object" table="var__m_sys_hub_flow_input_a8b7f7ce2f8030108e0df64ef699b6d2" version="3">
+        <sys_choice_set action="INSERT_OR_UPDATE">
+            <element>expiring_object</element>
+            <name>var__m_sys_hub_flow_input_a8b7f7ce2f8030108e0df64ef699b6d2</name>
+            <sys_class_name>sys_choice_set</sys_class_name>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2021-05-12 22:41:59</sys_created_on>
+            <sys_id>bcb73bce2f8030108e0df64ef699b61f</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name/>
+            <sys_package display_value="Azure Service Principal Secret Expiry Watchdog" source="x_337610_azure_ser">1d419bce2f0030108e0df64ef699b65c</sys_package>
+            <sys_policy/>
+            <sys_scope display_value="Azure Service Principal Secret Expiry Watchdog">1d419bce2f0030108e0df64ef699b65c</sys_scope>
+            <sys_update_name/>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2021-05-12 22:41:59</sys_updated_on>
+        </sys_choice_set>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>expiring_object</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Password</label>
+            <language>en</language>
+            <name>var__m_sys_hub_flow_input_a8b7f7ce2f8030108e0df64ef699b6d2</name>
+            <sequence>0</sequence>
+            <synonyms/>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2021-05-12 22:41:59</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>74b73bce2f8030108e0df64ef699b61f</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2021-05-12 22:41:59</sys_updated_on>
+            <value>password</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>expiring_object</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Certificate</label>
+            <language>en</language>
+            <name>var__m_sys_hub_flow_input_a8b7f7ce2f8030108e0df64ef699b6d2</name>
+            <sequence>1</sequence>
+            <synonyms/>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2021-05-12 22:41:59</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>38b73bce2f8030108e0df64ef699b621</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2021-05-12 22:41:59</sys_updated_on>
+            <value>certificate</value>
+        </sys_choice>
+    </sys_choice>
+</record_update>
