@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_rest_message_fn_param_defs">
+    <sys_rest_message_fn_param_defs action="INSERT_OR_UPDATE">
+        <name>$select</name>
+        <order>100</order>
+        <rest_message_function display_value="List Applications for Expiry Check">a39e6f3a2f1030108e0df64ef699b625</rest_message_function>
+        <sys_class_name>sys_rest_message_fn_param_defs</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-05-27 16:26:43</sys_created_on>
+        <sys_id>5481b3fa2f1030108e0df64ef699b616</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>$select</sys_name>
+        <sys_package display_value="Azure Service Principal Secret Expiry Watchdog" source="x_337610_azure_ser">1d419bce2f0030108e0df64ef699b65c</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Azure Service Principal Secret Expiry Watchdog">1d419bce2f0030108e0df64ef699b65c</sys_scope>
+        <sys_update_name>sys_rest_message_fn_param_defs_5481b3fa2f1030108e0df64ef699b616</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-05-27 16:26:43</sys_updated_on>
+        <value>appId,displayName,keyCredentials,passwordCredentials</value>
+    </sys_rest_message_fn_param_defs>
+</record_update>

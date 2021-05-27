@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sysauto_script">
+    <sysauto_script action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <business_calendar/>
+        <condition/>
+        <conditional>false</conditional>
+        <entered_time>1970-01-01 00:00:00</entered_time>
+        <name>Get Service Principals and trigger task creation flow</name>
+        <offset/>
+        <offset_type/>
+        <run_as display_value="System Administrator">6816f79cc0a8016401c5a33be04be441</run_as>
+        <run_as_tz/>
+        <run_dayofmonth>1</run_dayofmonth>
+        <run_dayofweek>1</run_dayofweek>
+        <run_period/>
+        <run_start>2021-05-12 22:05:03</run_start>
+        <run_time>1970-01-01 12:00:00</run_time>
+        <run_type>daily</run_type>
+        <script><![CDATA[try {
+
+    var leadtimeDays = gs.getProperty('x_337610_azure_ser.azure.service.principal.leadtime.before.expiry');
+
+    var DUE_DATE = new GlideDateTime();
+    DUE_DATE.addDaysLocalTime(parseInt(leadtimeDays));
+
+    processRestRequest('List Service Principals for Expiry Check', 'Service Principal');
+    processRestRequest('List Applications for Expiry Check', 'Application');
+
+} catch (ex) {
+    gs.error('x_337610_azure_ser: error in scheduled job: ' + ex);
+}
+
+function processRestRequest(requestName, type) {
+    try {
+        var r = new sn_ws.RESTMessageV2('x_337610_azure_ser.Microsoft Graph API', requestName);
+
+        var response = r.execute();
+        var responseBody = response.getBody();
+        var httpStatus = response.getStatusCode();
+
+        if (httpStatus == 200) {
+            var body = JSON.parse(responseBody);
+            for (var i = 0; i < body.value.length; i++) {
+                var sp = body.value[i];
+                processSecrets(type, sp.appId, sp.displayName, 'certificate', sp.keyCredentials);
+                processSecrets(type, sp.appId, sp.displayName, 'password', sp.passwordCredentials);
+            }
+        } else {
+            throw 'got http status ' + httpStatus + ' from graph API.';
+        }
+    } catch (ex) {
+        gs.error('x_337610_azure_ser: error occured while processing REST request: ' + ex);
+    }
+}
+
+function processSecrets(type, name, id, secretType, keys) {
+    for (var i = 0; i < keys.length; i++) {
+        try {
+            var key = keys[i];
+            var expiryDate = new GlideDateTime();
+            expiryDate.setValueUTC(key.endDateTime, "yyyy-MM-dd'T'HH:mm:ss.SSS'Z'");
+            if (expiryDate.onOrBefore(DUE_DATE)) {
+                startFlow(type, name, id, secretType, key.keyId, key.displayName, expiryDate);
+            }
+        } catch (ex) {
+            gs.error('x_337610_azure_ser: error occured while processing secrets of '+ type +' '+ name + ' of type ' + secretType + ': ' + ex);
+        }
+    }
+}
+
+function startFlow(type, name, id, secretType, secretId, secretName, expiryDate) {
+    try {
+        var inputs = {};
+        inputs['type'] = type; // String 
+        inputs['name'] = name; // String 
+        inputs['id'] = id; // String 
+        inputs['secret_type'] = secretType; //Choice - password, certificate
+        inputs['secret_id'] = secretId; // String 
+        inputs['secret_name'] = secretName; // String 
+        inputs['expiry_date'] = expiryDate; // Date
+
+        var subflow = gs.getProperty('x_337610_azure_ser.azure.service.principal.processinng.flow');
+        sn_fd.FlowAPI.getRunner().subflow(subflow).inBackground().withInputs(inputs).run();
+
+    } catch (ex) {
+        gs.error('x_337610_azure_ser: error occured while trying to trigger flow ' + ex);
+    }
+}]]></script>
+        <sys_class_name>sysauto_script</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-05-12 22:10:59</sys_created_on>
+        <sys_id>a73fe70a2f8030108e0df64ef699b6eb</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_name>Get Service Principals and trigger task creation flow</sys_name>
+        <sys_package display_value="Azure Service Principal Secret Expiry Watchdog" source="x_337610_azure_ser">1d419bce2f0030108e0df64ef699b65c</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Azure Service Principal Secret Expiry Watchdog">1d419bce2f0030108e0df64ef699b65c</sys_scope>
+        <sys_update_name>sysauto_script_a73fe70a2f8030108e0df64ef699b6eb</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-05-27 20:28:53</sys_updated_on>
+        <time_zone/>
+        <upgrade_safe>false</upgrade_safe>
+    </sysauto_script>
+</record_update>

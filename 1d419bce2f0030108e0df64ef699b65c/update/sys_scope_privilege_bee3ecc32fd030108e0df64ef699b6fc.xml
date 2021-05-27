@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_scope_privilege">
+    <sys_scope_privilege action="INSERT_OR_UPDATE">
+        <operation>read</operation>
+        <source_scope display_value="Azure Service Principal Secret Expiry Watchdog">1d419bce2f0030108e0df64ef699b65c</source_scope>
+        <status>allowed</status>
+        <sys_class_name>sys_scope_privilege</sys_class_name>
+        <sys_created_by>system</sys_created_by>
+        <sys_created_on>2021-05-27 20:06:19</sys_created_on>
+        <sys_id>bee3ecc32fd030108e0df64ef699b6fc</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>service_task</sys_name>
+        <sys_package display_value="Azure Service Principal Secret Expiry Watchdog" source="x_337610_azure_ser">1d419bce2f0030108e0df64ef699b65c</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Azure Service Principal Secret Expiry Watchdog">1d419bce2f0030108e0df64ef699b65c</sys_scope>
+        <sys_update_name>sys_scope_privilege_bee3ecc32fd030108e0df64ef699b6fc</sys_update_name>
+        <sys_updated_by>system</sys_updated_by>
+        <sys_updated_on>2021-05-27 20:06:19</sys_updated_on>
+        <target_name>service_task</target_name>
+        <target_scope display_value="Global">global</target_scope>
+        <target_type>sys_db_object</target_type>
+    </sys_scope_privilege>
+</record_update>
